@@ -36,4 +36,9 @@ def update
         format.html { render :edit }
       end
     end
+    
+    def show
+      @portfolio_item = Portfolio.find(params[:id])
+    end
+  
 end
